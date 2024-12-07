@@ -24,7 +24,6 @@ body {
 .sidebar.collapsed {
   width: 60px;
 }
-
 .sidebar .logo {
   padding: 10px;
   text-align: center;
@@ -48,6 +47,8 @@ body {
   display: flex;
   align-items: center;
   transition: background-color 0.2s ease;
+  border-radius: 5px;
+
 }
 .nav-links li:hover {
   background-color: #555;
@@ -58,9 +59,14 @@ body {
   font-size: 18px;
 }
 
-.nav-links span {
+.nav-links span , a {
   display: inline-block;
   transition: opacity 0.3s ease;
+}
+.nav-links ul li span a{
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 .sidebar.collapsed span {
@@ -90,7 +96,7 @@ body {
 .header {
   background-color:#010902;
   color: white;
-  height: 60px;
+  height: 114px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -161,3 +167,105 @@ body {
 }
 /* Update for more better exp */
 
+/* Content */
+.dashboard-content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.dashboard-content .text-head {
+  font-size: 2rem;
+  color:#57b302fd;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.dashboard-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dashboard-content h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-content ul,
+.dashboard-content ol {
+  margin: 10px 0 20px 20px;
+}
+
+.dashboard-content ul li,
+.dashboard-content ol li {
+  margin-bottom: 10px;
+}
+
+.dashboard-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.dashboard-content a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+.dashboard-content {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.dashboard-content h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dashboard-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dashboard-content h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-content ul,
+.dashboard-content ol {
+  margin: 10px 0 20px 20px;
+}
+
+.dashboard-content ul li,
+.dashboard-content ol li {
+  margin-bottom: 10px;
+}
+
+.dashboard-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.dashboard-content a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* End of Content */
