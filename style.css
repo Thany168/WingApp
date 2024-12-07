@@ -48,7 +48,13 @@ body {
   align-items: center;
   transition: background-color 0.2s ease;
   border-radius: 5px;
+  color: white;
 
+}
+
+.sidebar nav .nav-links ul li a{
+  display: block;
+  color: white;
 }
 .nav-links li:hover {
   background-color: #555;
@@ -204,7 +210,8 @@ body {
 }
 
 .dashboard-content a {
-  color: #007bff;
+  display: block;
+
   text-decoration: none;
 }
 
