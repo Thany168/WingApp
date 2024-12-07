@@ -25,3 +25,18 @@ document.addEventListener('DOMContentLoaded', function () {
   handleResize();
   window.addEventListener('resize', handleResize);
 });
+
+
+// Slide ads
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  let index = 0;
+
+  function autoSlide() {
+    index = (index + 1) % totalSlides; 
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+  setInterval(autoSlide, 3000);
+});
